@@ -1,99 +1,82 @@
 # 🚨 Digital Arrest Scam Detection System
 
-## 📌 Overview
-
-This project is an AI-based system designed to detect **digital arrest scams** using Machine Learning and Natural Language Processing (NLP).
-It analyzes both **text messages and voice input**, converts speech to text, and predicts whether the content is a scam.
+An AI-powered web application that detects **Digital Arrest scams** using both **text and voice input**.  
+Built using Machine Learning and deployed with an interactive UI for real-time fraud detection.
 
 ---
 
-## ⚡ Features
+## 🔍 Overview
 
-* 🔍 Detects scam messages using Machine Learning
-* 🎤 Supports **voice input (speech-to-text)**
-* 📊 Generates a **risk score (%)**
-* ⚠ Highlights **suspicious keywords**
-* 🌐 Interactive **web interface using Streamlit**
-* 🖼 Cybercrime awareness UI with background visualization
+Digital arrest scams are increasing rapidly where attackers impersonate authorities (CBI, Police, etc.) and threaten victims.
 
----
-
-## 🧠 Technologies Used
-
-* Python
-* Scikit-learn (Random Forest)
-* TF-IDF Vectorization
-* Streamlit (Web UI)
-* SpeechRecognition (Voice input)
-* Pandas
+This project detects such scams by analyzing:
+- 📩 Text messages
+- 🎤 Voice input (converted to text)
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ Features
 
-1. User inputs text or speaks
-2. Voice is converted into text
-3. Text is processed using TF-IDF
-4. Random Forest model predicts scam probability
-5. System outputs:
+- 🧠 Machine Learning-based scam detection (Random Forest)
+- 📊 Risk score calculation (0–100%)
+- 📈 Graphical visualization (Gauge + Bar Chart)
+- 🎤 Voice-to-text detection
+- ⚠️ Suspicious keyword detection
+- 🌐 Interactive Streamlit UI
+- 🧾 Real-time analysis with confidence score
 
-   * Risk Score
-   * Scam / Safe result
-   * Suspicious keywords
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend/UI**: Streamlit  
+- **Machine Learning**: Scikit-learn (Random Forest)  
+- **Text Processing**: TF-IDF Vectorizer  
+- **Voice Processing**: SpeechRecognition  
+- **Visualization**: Plotly  
+- **Language**: Python  
+
+---
+
+## 📂 Dataset
+
+- 📌 Spam dataset (spam.csv)
+- 📌 Custom Digital Arrest dataset
+- 📌 Hindi/Hinglish dataset
+
+👉 Dataset includes scam-related phrases like:
+- “CBI warrant issued”
+- “Transfer money immediately”
+- “Digital arrest notice”
+
+---
+
+## 🧠 Model Details
+
+- Algorithm: Random Forest Classifier  
+- Feature Extraction: TF-IDF  
+- Output:
+  - Risk Score (%)
+  - Scam / Safe Prediction  
+  - Confidence Level  
+
+---
+
+## 📊 Output Visualization
+
+The system provides:
+
+- 📉 Risk Score Progress Bar  
+- 🎯 Gauge Chart (Risk Level)  
+- 📊 Scam vs Safe Probability Chart  
+- 🧠 Model Confidence  
 
 ---
 
 ## 🚀 How to Run
 
-### 1. Install Dependencies
+### 1. Clone Repository
 
 ```bash
-pip install -r requirements.txt
-```
-
-### 2. Run Application
-
-```bash
-python -m streamlit run app.py
-```
-
----
-
-## 📁 Project Structure
-
-```
-Digital_arrest_project/
-│
-├── app.py
-├── spam.csv
-├── image.png
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 🌍 Deployment
-
-This project can be deployed using **Streamlit Cloud** to generate a public link accessible from anywhere.
-
----
-
-## ⚠️ Note
-
-* Voice feature works best on local system
-* May have limitations on cloud deployment due to browser permissions
-
----
-
-## 🎯 Conclusion
-
-This system helps users identify and avoid **digital arrest scams** by analyzing suspicious communication patterns in real time.
-
----
-
-## 👨‍💻 Author
-
-Kanishk Verma
-M.Sc Cyber Security
-Amity University Rajasthan
+git clone https://github.com/https-kanishk21/Digital-Arrest-Scam-Detection-System.git
+cd Digital-Arrest-Scam-Detection-System
